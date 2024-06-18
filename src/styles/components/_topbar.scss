@@ -1,0 +1,43 @@
+@use '../variables/global' as *;
+
+.c-topbar {
+  height: $topbar-height;
+  animation-name: topbar-bg;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  &.v-app-bar.v-toolbar {
+    background-image: url('./../assets/images/app-topbar-bg-stars.png');
+    background-size: $topbar-bg-width $topbar-bg-height;
+  }
+
+  &__logo {
+    margin-top: 0.375rem;
+    width: auto;
+    height: calc($topbar-height - 1.5rem);
+  }
+}
+
+@keyframes topbar-bg {
+  0% {
+    background-position: 0 0;
+    background-color: #102a44;
+  }
+  15% {
+    background-color: #112f4e;
+  }
+  45% {
+    background-color: #5378a2;
+  }
+  55% {
+    background-color: #5378a2;
+  }
+  85% {
+    background-color: #112f4e;
+  }
+  100% {
+    background-position: $topbar-bg-width 0;
+    background-color: #102a44;
+  }
+}

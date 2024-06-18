@@ -1,0 +1,9 @@
+@use '../variables/global' as *;
+
+.e-main {
+  &__container {
+    margin: auto;
+    padding: $main-padding;
+    max-width: $main-max-width;
+  }
+}

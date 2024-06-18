@@ -1,0 +1,12 @@
+// App Topbar
+$topbar-height: 4rem;
+$topbar-bg-width: 20rem;
+$topbar-bg-height: $topbar-height;
+
+// Main
+$main-max-width: 40rem;
+$main-padding: 2rem 1rem;
+
+:export {
+  main-max-width: $main-max-width;
+}

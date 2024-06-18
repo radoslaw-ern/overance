@@ -1,0 +1,40 @@
+// Main color palette
+$color-1: #fff;
+$color-2: #161616;
+$color-3: #112f4e;
+$color-4: #102a44;
+$color-5: #4caf50;
+$color-6: #b00020;
+$color-7: #2196f3;
+$color-8: #fb8c00;
+
+// Color assignment
+$color-text: $color-1;
+$color-bg: $color-2;
+$color-primary: $color-3;
+$color-secondary: $color-4;
+$color-success: $color-5;
+$color-error: $color-6;
+$color-info: $color-7;
+$color-warning: $color-8;
+
+// Theme colors for Vuetify
+$theme: (
+  'background': $color-bg,
+  'surface': $color-bg,
+  'primary': $color-primary,
+  'primary-darken-1': lighten($color-primary, 20%),
+  'secondary': $color-secondary,
+  'secondary-darken-1': lighten($color-secondary, 20%),
+  'success': $color-success,
+  'error': $color-error,
+  'info': $color-info,
+  'warning': $color-warning
+);
+
+// Export colors to be available for JS
+:export {
+  @each $color, $hex in $theme {
+    #{unquote($color)}: $hex;
+  }
+}
