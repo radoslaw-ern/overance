@@ -1,0 +1,15 @@
+@use '../variables/colors' as *;
+
+.c-form {
+  &__search {
+    &--success {
+      background-color: $color-success;
+    }
+  }
+
+  &__input {
+    &--success {
+      background-color: $color-success;
+    }
+  }
+}

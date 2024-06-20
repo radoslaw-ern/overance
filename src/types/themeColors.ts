@@ -5,6 +5,7 @@ export interface ThemeColors {
   'primary-darken-1': string
   secondary: string
   'secondary-darken-1': string
+  disabled: string
   success: string
   error: string
   info: string

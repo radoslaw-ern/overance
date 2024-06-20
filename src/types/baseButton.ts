@@ -1,12 +1,12 @@
-export enum GenericButtonType {
+export enum BaseButtonType {
   PRIMARY = 'primary',
   SECONDARY = 'secondary'
 }
 
-export interface GenericButton {
+export interface BaseButton {
   label: string
   icon?: string
-  type?: GenericButtonType
+  type?: BaseButtonType
   to?: string
   disabled?: boolean
 }

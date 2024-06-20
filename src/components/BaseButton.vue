@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { type GenericButton, GenericButtonType } from '@/types/genericButton'
+import { type BaseButton, BaseButtonType } from '@/types/baseButton'
 
-const props = withDefaults(defineProps<GenericButton>(), {
-  type: GenericButtonType.PRIMARY,
+const props = withDefaults(defineProps<BaseButton>(), {
+  type: BaseButtonType.PRIMARY,
   disabled: false
 })
 </script>

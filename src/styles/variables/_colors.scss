@@ -3,10 +3,11 @@ $color-1: #fff;
 $color-2: #161616;
 $color-3: #112f4e;
 $color-4: #102a44;
-$color-5: #4caf50;
-$color-6: #b00020;
+$color-5: #172;
+$color-6: #a21;
 $color-7: #2196f3;
 $color-8: #fb8c00;
+$color-9: #000;
 
 // Color assignment
 $color-text: $color-1;
@@ -14,6 +15,7 @@ $color-bg: $color-2;
 $color-primary: $color-3;
 $color-secondary: $color-4;
 $color-success: $color-5;
+$color-disabled: $color-9;
 $color-error: $color-6;
 $color-info: $color-7;
 $color-warning: $color-8;
@@ -26,6 +28,7 @@ $theme: (
   'primary-darken-1': lighten($color-primary, 20%),
   'secondary': $color-secondary,
   'secondary-darken-1': lighten($color-secondary, 20%),
+  'disabled': $color-disabled,
   'success': $color-success,
   'error': $color-error,
   'info': $color-info,

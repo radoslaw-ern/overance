@@ -12,6 +12,11 @@ const router = createRouter({
       path: '/custom-form',
       name: 'Custom Form',
       component: () => import('@/views/CustomFormView.vue')
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'Not Found',
+      component: () => import('@/views/NotFoundView.vue')
     }
   ]
 })
