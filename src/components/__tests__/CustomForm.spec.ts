@@ -5,7 +5,6 @@ import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 import CustomForm from '../CustomForm.vue'
-// import { formFields } from '@/stores/formFields'
 
 import {
   numberOfFormFieldsInit,

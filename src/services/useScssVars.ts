@@ -1,18 +1,20 @@
 import { type ThemeColors } from '@/types/themeColors'
 
 const scssVarsToJSON = (scssVars: string): JSON => {
-  const output: JSON = JSON.parse(
-    '{"' +
-      scssVars
-        .slice(10)
-        .slice(0, -2)
-        .replace(/ /g, '')
-        .replace(/:/g, `":"`)
-        .replace(/;/g, `",`)
-        .replace(/\n/g, `"`)
-        .slice(0, -1) +
-      '}'
-  )
+  const outputString: string =
+    '{' +
+    scssVars
+      .replace(/ /g, '')
+      .replace(/(?:\r\n|\r|\n)/g, '')
+      .replace(':export{', '"')
+      .replace(/:/g, '":"')
+      .replace(/;/g, '","')
+      .replace(',"}', '"')
+      .replace('""', '')
+      .replace('}', '') +
+    '"}'
+
+  const output: JSON = JSON.parse(outputString)
 
   return output
 }
