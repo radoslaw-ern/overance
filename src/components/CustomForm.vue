@@ -77,17 +77,17 @@ onMounted(() => {
 </script>
 
 <template>
-  <v-text-field
-    label="Enter text to search the form"
-    append-inner-icon="mdi-magnify"
-    hide-details
-    single-line
-    v-model="searchPhrase"
-    @input="performSearch"
-    :class="['c-form__search', { 'c-form__search--success': isSearchPhraseFound }]"
-  ></v-text-field>
-
-  <v-divider class="mt-6 mb-3" />
+  <div class="pb-4">
+    <v-text-field
+      label="Enter text to search the form"
+      append-inner-icon="mdi-magnify"
+      hide-details
+      single-line
+      v-model="searchPhrase"
+      @input="performSearch"
+      :class="['c-form__search', { 'c-form__search--success': isSearchPhraseFound }]"
+    />
+  </div>
 
   <v-form>
     <v-list>
@@ -122,13 +122,13 @@ onMounted(() => {
     </v-list>
   </v-form>
 
-  <v-divider class="mt-3 mb-6" />
-
-  <BaseButton
-    :label="`Add new field`"
-    :disabled="!isAddButtonAvailable"
-    :color="isAddButtonAvailable ? 'primary' : 'disabled'"
-    class="c-form__add-button"
-    @click="addFormField"
-  />
+  <div class="pt-4">
+    <BaseButton
+      :label="`Add new field`"
+      :disabled="!isAddButtonAvailable"
+      :color="isAddButtonAvailable ? 'primary' : 'disabled'"
+      class="c-form__add-button"
+      @click="addFormField"
+    />
+  </div>
 </template>

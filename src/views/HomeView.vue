@@ -5,9 +5,9 @@ import BaseButton from '@/components/BaseButton.vue'
 <template>
   <h1 class="pb-6">Welcome</h1>
   <p class="pb-4">
-    This is a Vue web application providing a custom form. You can add and delete fields with some
-    predefined limitations. It also provides a search functionality, and a vowel count for each
-    field.
+    This is a Vue web application providing a custom form. The fields can be added and deleted with
+    some predefined limitations. The app also provides a search functionality, and a vowel count for
+    each field.
   </p>
   <p class="pb-4">
     Your data will be saved in the Pinia store, so you can leave the form and come back later. The
