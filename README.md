@@ -19,6 +19,9 @@ To run the project, open a terminal and run the following commands:\
 `npm install`\
 `npm run dev`
 
+By default it runs under this address:\
+`http://localhost:5173/`
+
 ## Unit testing
 
 To run the unit tests, open a terminal and run the following command:\
