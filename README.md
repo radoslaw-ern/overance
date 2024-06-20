@@ -15,19 +15,23 @@ This project was developed using the [Vue 3](https://vuejs.org/) framework and [
 
 ## Project setup
 
-To run the project, open a terminal and run the following commands:\
-`npm install`\
+To install all dependencies, open a terminal and enter the following command:\
+`npm install`
+
+## Compile and Hot-Reload for Development
+
+To run the development version of this project, open a terminal and enter the following command:\
 `npm run dev`
 
 By default it runs under this address:\
 `http://localhost:5173/`
 
-## Unit testing
+## Run Unit Tests
 
-To run the unit tests, open a terminal and run the following command:\
+To run the unit tests, open a terminal and enter the following command:\
 `npm run test:unit`
 
-## Build for production
+## Compile and Minify for Production
 
-To build the project for production, open a terminal and run the following command:\
+To build the project for production, open a terminal and enter the following command:\
 `npm run build`
