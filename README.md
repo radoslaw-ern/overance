@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a web application that allows you to manage your data in a form. You can add and delete fields with some predefined limitations:
+This is a web application that allows you to manage your data in a form. The fields can be added and deleted with some predefined limitations:
 
 - 3 fields initially
 - 10 fields maximum
