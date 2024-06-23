@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, computed } from 'vue'
+import BaseCounter from '@/components/BaseCounter.vue'
 import BaseButton from '@/components/BaseButton.vue'
 import { useFormFieldsStore } from '@/stores/formFields'
 import { type FormFieldValue, type FormField } from '@/types/formField'
@@ -106,10 +107,11 @@ onMounted(() => {
             ]"
             v-model="formModel[formFieldId].value"
           />
-          <div class="pt-1 px-4 text-right">
-            <p>Vowel count:</p>
-            <span>{{ formModel[formFieldId].vowelCount }}</span>
-          </div>
+          <BaseCounter
+            :label="`Vowel count:`"
+            :count="formModel[formFieldId].vowelCount"
+            class="pt-1 px-4"
+          />
           <v-btn
             icon="mdi-delete"
             aria-label="Delete field"

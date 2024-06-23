@@ -35,7 +35,12 @@ const onRedirect = () => {
       <span v-if="isBackButtonAvailable">
         {{ route.name }}
       </span>
-      <img v-else src="@/assets/images/app-logo.png" alt="Overance logo" class="c-topbar__logo" />
+      <img
+        v-else
+        src="https://img1.wsimg.com/isteam/ip/4ad28133-a347-4f7e-90fc-5c9d4c26552d/overance%20logo%20white.png/:/rs=w:192,h:40,cg:true,m/cr=w:192,h:40/qt=q:95"
+        alt="Overance logo"
+        class="c-topbar__logo"
+      />
     </v-app-bar-title>
   </v-app-bar>
 </template>
